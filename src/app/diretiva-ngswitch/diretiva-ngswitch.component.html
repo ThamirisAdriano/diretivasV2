@@ -1,0 +1,22 @@
+<nav class="nav_style">
+    <div class="div_nav_style">
+        <a class="nav"
+        [class.active]="aba == 'home'"
+        (click)="aba = 'home'">Home</a>
+        <a  class="nav"
+        [class.active]="aba == 'mapa'"
+        (click)="aba = 'mapa'">Mapa</a>
+        <a  class="nav"
+        [class.active]="aba == 'lista'"
+        (click)="aba = 'lista'">Lista</a>
+    </div>
+
+</nav>
+
+<!-- ngSwitch é uma forma de ter vários If's e Elses's -->
+
+<div class="container" [ngSwitch]="aba">
+    <p *ngSwitchCase="'mapa'">Modo Mapa Ativado</p>
+    <p *ngSwitchCase="'lista'">Modo Lista Ativado</p>
+    <p *ngSwitchDefault>Home</p>
+</div>

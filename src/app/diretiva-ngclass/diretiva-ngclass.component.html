@@ -1,0 +1,21 @@
+<h1>
+    <p>Property Binding</p>
+  <i
+    class="glyphicon"
+    [class.bi-heart]="!meuFavorito"
+    [class.bi-heart-fill]="meuFavorito"
+    (click)="onClick()"
+  ></i>
+</h1>
+
+<h1>
+    <p>Diretiva ngClass (diretiva de classe do Angular)</p>
+  <i
+    class="glyphicon"
+    [ngClass]="{
+      'bi-heart': !meuFavorito,
+      'bi-heart-fill': meuFavorito
+    }"
+    (click)="onClick()"
+  ></i>
+</h1>

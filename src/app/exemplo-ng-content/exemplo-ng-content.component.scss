@@ -1,0 +1,15 @@
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+.panel-heading, .panel-body{
+    border: 1px solid cyan;
+    width: 12rem;
+    padding: 20px;
+    align-items: center;
+}
+
