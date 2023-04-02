@@ -16,6 +16,7 @@ import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretiv
 import { FundoCianoDirective } from './shared/fundo-ciano.directive';
 import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
 import { HighlightDirective } from './shared/highlight.directive';
+import { PocNgstyleComponent } from './poc-ngstyle/poc-ngstyle.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { HighlightDirective } from './shared/highlight.directive';
     FundoCianoDirective,
     HighlightMouseDirective,
     HighlightDirective,
+    PocNgstyleComponent,
   ],
   imports: [
     BrowserModule,
